@@ -18,11 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         // ao ser clicado, o botão fará...
         rollButton.setOnClickListener {
-            // O Toast exibe uma mensagem na tela por um curto período de tempo
-            // MainActivity é uma subclasse de Context, por isso usamos o this como parâmetro
-            // O Context permite obter informações sobre o estado atual do sistema Android
-            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
-
             // Chama função para "rolar" o dado
             rollDice()
         }
